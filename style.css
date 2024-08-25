@@ -1,0 +1,34 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    list-style: none;
+}
+
+#tarefas {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.tarefa {
+    display: flex;
+    justify-content: space-between;
+
+    padding-inline: 32px;
+    border: 1px solid black;
+    border-radius: 8px;
+
+    max-width: 600px;
+}
+
+.tarefa.concluida {
+    border: 1px solid forestgreen;
+    box-shadow: 1px 1px 10px forestgreen;
+    border-radius: 8px;
+}
+
+.tarefa .acoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
